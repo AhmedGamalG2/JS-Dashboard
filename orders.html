@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+              </span>
+              <span class="title">Market Name</span></a
+            >
+          </li>
+          <li>
+            <a href="index.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="products.html">
+              <span class="icon">
+                <ion-icon name="shirt-outline"></ion-icon>
+              </span>
+              <span class="title">Products</span></a
+            >
+          </li>
+          <li>
+            <a href="/orders.html">
+              <span class="icon">
+                <ion-icon name="chatbox-outline"> </ion-icon>
+              </span>
+              <span class="title">Orders</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="people-outline"> </ion-icon>
+              </span>
+              <span class="title">Customers</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="settings-outline"> </ion-icon>
+              </span>
+              <span class="title">Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="/reports.html">
+              <span class="icon">
+                <ion-icon name="lock-closed-outline"> </ion-icon>
+              </span>
+              <span class="title">Reports</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="log-out-outline"> </ion-icon>
+              </span>
+              <span class="title">Sign Out</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <header>
+          <div class="toggle">
+            <ion-icon name="menu-outline"> </ion-icon>
+          </div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="search" />
+              <ion-icon name="search-outline"> </ion-icon>
+            </label>
+          </div>
+          <div class="user">
+            <img src="user.jpg" alt="" />
+          </div>
+        </header>
+        <button class="addProd">Add New Order</button>
+        <div class="addFrame">
+            <div class="addProductContainer">
+            </div>
+          <div id="formAdd" >Add Now</div>
+        </div>
+        <div class="ordersCategory">
+            <div class="orderCategory">
+                <div><ion-icon name="time-outline"></ion-icon></div>
+                <div>
+                    <p>0</p><p>Waitting</p><p style="background-color: burlywood;"></p>
+                </div>
+            </div>
+            <div class="orderCategory">
+                <div><ion-icon name="close-outline"></ion-icon></div>
+                <div>
+                    <p>0</p><p>Canceled</p><p></p>
+                </div>
+            </div>
+            <div class="orderCategory">
+                <div><ion-icon name="checkmark-done-outline"></ion-icon></div>
+                <div>
+                    <p>0</p><p>Done</p><p style="background-color: green;"></p>
+                </div>
+            </div>
+        </div>
+        <div class="ordersContainer">
+            <div class="ordersHeader"><p>The Orders</p><p>(0 order)</p></div>
+        </div>
+        
+        <footer><button>Create your Market Now</button></footer>
+      </div>
+    </div>
+    <!------------ ionicons ------------------->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="orders.js"></script>
+  </body>
+</html>

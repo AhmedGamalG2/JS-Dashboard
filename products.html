@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+              </span>
+              <span class="title">Market Name</span></a
+            >
+          </li>
+          <li>
+            <a href="index.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="products.html">
+              <span class="icon">
+                <ion-icon name="shirt-outline"></ion-icon>
+              </span>
+              <span class="title">Products</span></a
+            >
+          </li>
+          <li>
+            <a href="/orders.html">
+              <span class="icon">
+                <ion-icon name="chatbox-outline"> </ion-icon>
+              </span>
+              <span class="title">Orders</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="people-outline"> </ion-icon>
+              </span>
+              <span class="title">Customers</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="settings-outline"> </ion-icon>
+              </span>
+              <span class="title">Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="/reports.html">
+              <span class="icon">
+                <ion-icon name="lock-closed-outline"> </ion-icon>
+              </span>
+              <span class="title">Reports</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="log-out-outline"> </ion-icon>
+              </span>
+              <span class="title">Sign Out</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <header>
+          <div class="toggle">
+            <ion-icon name="menu-outline"> </ion-icon>
+          </div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="search" />
+              <ion-icon name="search-outline"> </ion-icon>
+            </label>
+          </div>
+          <div class="user">
+            <img src="user.jpg" alt="" />
+          </div>
+        </header>
+        <button class="addProd">Add New Product</button>
+        <div class="addFrame">
+          <form >
+            <label for="name">
+              <div>Name</div>
+              <input id="name" type="text" placeholder="Product Name">
+            </label>
+            <label for="cat">
+              <div>Category</div>
+              <input id="cat" type="text" placeholder="Product Category">
+            </label>
+            <label for="price">
+              <div>Price</div>
+              <input id="price" type="number" placeholder="Product Price">
+            </label>
+            <label for="amount">
+              <div>Amount</div>
+              <input id="amount" type="number" placeholder="Product amount">
+            </label>
+            <label for="img">
+              <div>Image</div>
+              <label id="proImg" for="img"> Product Image</label>
+              <input id="img" type="file" >
+            </label>
+           <label ><div></div><div id="formAdd" >Add Now</div></label> 
+          </form>
+          <div class="newImgDev"><img class="newImg" src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-6.png" alt=""></div>
+        </div>
+        <div class="productContainer">
+        </div>
+        <footer><button>Create your Market Now</button></footer>
+      </div>
+    </div>
+    <!------------ ionicons ------------------->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
